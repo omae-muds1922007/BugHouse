@@ -35,6 +35,10 @@ class TaskAdapter(
         this.items.addAll(items)
         notifyDataSetChanged()
     }
+    fun add(item: Task) {
+        this.items.add(item)
+        notifyDataSetChanged()
+    }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val container: View = view.findViewById(R.id.container)
